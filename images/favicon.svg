@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Fuel Display</title>
+  <rect x="3" y="3" width="58" height="58" rx="12" fill="#102238" stroke="#98adc2" stroke-width="2"/>
+  <path d="M21 46V18h24M21 31h18" fill="none" stroke="#e7eff8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="45" cy="44" r="4" fill="#ff4d60"/>
+</svg>

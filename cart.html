@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart & WhatsApp Checkout | Fuel Display</title>
+  <meta name="description" content="Review your configured LED fuel price signs and prepare an order to send to Fuel Display on WhatsApp.">
+  <link rel="canonical" href="https://fueldisplay.com/cart.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fuel Display">
+  <meta property="og:title" content="Cart & WhatsApp Checkout | Fuel Display">
+  <meta property="og:description" content="Review your configured LED fuel price signs and prepare an order to send to Fuel Display on WhatsApp.">
+  <meta property="og:url" content="https://fueldisplay.com/cart.html">
+  <meta property="og:image" content="https://fueldisplay.com/images/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fuel Display LED fuel price sign with red digits on a deep navy background">
+  <meta name="theme-color" content="#0b1626">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Classic scripts keep the site usable when opened directly from a folder. -->
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="cart">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="utility">
+      <div class="container utility-inner">
+        <span class="utility-label"><span class="status-dot"></span> Canada &amp; United States</span>
+        <label class="market-label" for="site-market">
+          <span class="sr-only">Store country and currency</span>
+          <select id="site-market" data-market>
+            <option value="CA">CA · CAD $</option>
+            <option value="US">US · USD $</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class="container nav-bar">
+      <a class="brand" href="index.html" aria-label="Fuel Display home"><span class="brand-mark"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M7 8h10M7 12h7M7 16h4"/></svg></span><span>Fuel<span class="brand-light">Display</span></span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="cart-link" href="cart.html" aria-current="page" aria-label="Cart, 0 items" data-cart-link><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.5 11h11L21 7H6m2 12h.01m9 0h.01"/><circle cx="8.5" cy="19.5" r="1"/><circle cx="17.5" cy="19.5" r="1"/></svg><span class="cart-word">Cart</span><span class="cart-count" data-cart-count>0</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu" hidden><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main-content" tabindex="-1">
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Your order</p>
+        <h1>Cart &amp; checkout</h1>
+        <p>Review your signs, then prepare your order for WhatsApp.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cart-layout" data-cart-page>
+        <section aria-labelledby="cart-heading">
+          <h2 id="cart-heading">Your signs</h2>
+          <div data-cart-items></div>
+          <p class="sr-only" data-cart-status role="status"></p>
+          <noscript><p>Enable JavaScript to use the cart and checkout.</p></noscript>
+        </section>
+        <section class="checkout-panel" data-checkout-panel aria-labelledby="checkout-heading" hidden>
+          <p class="eyebrow">Checkout</p>
+          <h2 id="checkout-heading">Delivery details</h2>
+          <div class="subtotal"><span>Items subtotal</span><strong data-cart-total>$0 CAD</strong></div>
+          <p class="small-copy">We’ll confirm shipping and any applicable taxes with you on WhatsApp.</p>
+          <form class="form-stack" data-checkout-form>
+            <label>Full name<input name="name" autocomplete="name" required maxlength="100"></label>
+            <label>Phone number<input name="phone" type="tel" autocomplete="tel" required maxlength="40"></label>
+            <label>Delivery country<select name="country" autocomplete="country" data-market><option value="CA">Canada · CAD $</option><option value="US">United States · USD $</option></select></label>
+            <label>Shipping address<textarea name="address" autocomplete="street-address" rows="3" required maxlength="350" placeholder="Street, city, province/state, postal/ZIP code"></textarea></label>
+            <button type="submit" class="button button-whatsapp"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.6 7.15L4 20l1.35-4.4A8 8 0 1 1 20 11.5Z"/><path d="M9 10.5h6m-6 3h4"/></svg> Continue to WhatsApp</button>
+            <p class="small-copy">Review and send your message in WhatsApp to request the order.</p>
+            <p class="form-status" data-checkout-status role="status" hidden>Message ready. <a data-checkout-link target="_blank" rel="noopener noreferrer">Open WhatsApp again</a>.</p>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Fuel Display home"><span class="brand-mark"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M7 8h10M7 12h7M7 16h4"/></svg></span><span>Fuel<span class="brand-light">Display</span></span></a>
+        <p>Outdoor LED fuel price signs for gas stations across Canada and the United States.</p>
+      </div>
+      <nav aria-label="Footer navigation" class="footer-links">
+        <h2>Explore</h2>
+        <a href="shop.html">Shop signs</a>
+        <a href="about.html">About Fuel Display</a>
+        <a href="contact.html?topic=bulk">Request a bulk quote</a>
+      </nav>
+      <div class="footer-links">
+        <h2>Get in touch</h2>
+        <a href="mailto:info@signagestudio.ca">info@signagestudio.ca</a>
+        <a href="tel:+15198689799">+1 519-868-9799</a>
+        <a href="contact.html">Contact options</a>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© Fuel Display</span><span>Canada &amp; United States</span></div>
+  </footer>
+  <a class="whatsapp-fab" href="https://wa.me/15198689799" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.6 7.15L4 20l1.35-4.4A8 8 0 1 1 20 11.5Z"/><path d="M9 10.5h6m-6 3h4"/></svg><span>WhatsApp</span></a>
+</body>
+</html>
